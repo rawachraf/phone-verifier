@@ -28,8 +28,8 @@ for match in phonenumbers.PhoneNumberMatcher(text, 'US'):
             urlstring = 'https://lookups.twilio.com/v1/PhoneNumbers/' \
                 + str(z) + '/'
             response = requests.get(urlstring, params=params,
-                                    auth=('ACb9e7926bb2510333af3d9f0a119d1dc6'
-                                    , '6ce0f5941065bb301a9af14a9bdddb89'
+                                    auth=(''
+                                    , 'your-details'
                                     ))
             print z + '  ' + str(timezone.time_zones_for_number(x)) \
                 + '  ' + repr(geocoder.description_for_number(x, 'en')) \
